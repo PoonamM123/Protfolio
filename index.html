@@ -29,17 +29,7 @@
 
 <body>
 
-    <div class="main">
-        <span class="popuptext " id="myPopup">
-            <div style="text-align: right; margin-left: 12px;">
-
-                <span class="close-btn" style="margin-right: 12px; font-size: larger;"><a  href="#"></a><i
-                        class="fa-solid fa-plus"></i></span>
-
-            </div>
-        </span>
-        
-    </div>
+   
     <div class="p-sticky">
         <div class="container">
 
@@ -59,7 +49,7 @@
                             <li><a class="nav-link" href="#sec9">Contact</a></li>
                         </ul>
                     </nav>
-                    <a class="button nav-btn" onclick="myFunction()" href="#">Hire Me!</a>
+                    <a class="button nav-btn" onclick="downloadResume()">Hire Me!</a>
                     <a class="res-icon" href="#">
                         <span class="menu m1"><i class="bi bi-list menu-icon"></i></a></span>
                     <span class="menu m2"><i class="bi bi-x menu-icon2"></i></span>
@@ -1111,6 +1101,17 @@
         // })
 
     </script>
+     <script>
+    function downloadResume() {
+      // Link element create karna
+      const link = document.createElement('a');
+      link.href = "/sassets/Remuse.pdf";   // 👈 yaha apne resume file ka path do
+      link.download = 'Poonam_Resume.pdf'; // 👈 ye naam file download hote waqt show hoga
+      document.body.appendChild(link); // body me add karna
+      link.click();  // click trigger
+      document.body.removeChild(link); // cleanup
+    }
+  </script>
 
 </body>
 

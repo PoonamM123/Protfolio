@@ -1,8 +1,4 @@
-function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
 
-}
 const animationDuration = 3000;
 
 const frameDuration = 1000 / 60;

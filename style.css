@@ -214,10 +214,6 @@ header a {
 
 }
 
-header a:hover {
-    /* color: #ffff; */
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -1256,9 +1252,6 @@ textarea {
     z-index: 99;
 }
 
-.same-row {
-    /* z-index: 999; */
-}
 
 .btn-same {
     background: transparent;
